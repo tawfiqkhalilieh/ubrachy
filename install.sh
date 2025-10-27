@@ -44,14 +44,13 @@ cd Waybar
 meson setup build
 ninja -C build
 ./build/waybar
+
 # If you want to install it
 ninja -C build install
 
 mkdir -p ~/.config/waybar
-curl -L -o ~/.config/waybar/config.jsonc https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu-testing/refs/heads/development/waybar/config.jsonc
-curl -L -o ~/.config/waybar/style.css https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu-testing/refs/heads/development/waybar/style.css
-# waybar
 
+# waybar
 sudo apt update
 sudo apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -79,33 +78,19 @@ sudo apt install wofi dunst network-manager blueman pavucontrol -y
 sudo apt install btop -y
 #```
 
-#download the theme for btop
-#```
-mkdir ~/.config/btop/themes -p
-curl -L -o ~/.config/btop/themes/btop.conf https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu/refs/heads/development/btop/themes/btop.conf
-curl -L -o ~/.config/btop/themes/btop.theme https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu/refs/heads/development/btop/themes/btop.theme
-#```
-
 #install alacritty
 #```
 sudo apt install alacritty -y
 #```
 
+
 # Make Alacritty the default terminal
 sudo update-alternatives --config x-terminal-emulator
 
-mkdir ~/.config/alacritty/ -p
-
-rm -rf ~/.config/alacritty/*.yaml
-curl -L -o ~/.config/alacritty/alacritty.yml https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu/refs/heads/development/alacritty/alacritty.toml
 
 # clipboard screenshot
 sudo apt install wl-clipboard grim slurp -y
 
-wget -O ~/discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 sudo apt install ~/discord.deb
 sudo apt -f install
 
-curl -L -o ~/Downloads/a.png https://raw.githubusercontent.com/basecamp/omarchy/refs/heads/master/themes/everforest/backgrounds/1-everforest.jpg
-
-curl -L -o ~/.config/hypr/hyprland.conf https://raw.githubusercontent.com/tawfiqkhalilieh/omarchy-on-ubuntu/refs/heads/development/hypr/hyprland.conf
