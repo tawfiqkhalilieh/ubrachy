@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UbarChy — Everforest Theme</title>
+  <style>
+    /* Everforest palette */
+    :root {
+      --bg: #2b3339;
+      --fg: #d3c6aa;
+      --green: #a7c080;
+      --aqua: #83c092;
+      --yellow: #dbbc7f;
+      --orange: #e69875;
+      --gray: #7a8478;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--green);
+    }
+
+    header p {
+      color: var(--gray);
+    }
+
+    main {
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero {
+      margin-bottom: 40px;
+    }
+
+    .hero h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: var(--aqua);
+    }
+
+    .hero p {
+      color: var(--gray);
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid var(--gray);
+    }
+
+    .video-section {
+      margin-top: 40px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      border: 2px solid var(--gray);
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--bg);
+      background: var(--green);
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--aqua);
+    }
+
+    .btn-secondary {
+      background: var(--yellow);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: var(--gray);
+      border-top: 1px solid var(--gray);
+      padding-top: 10px;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>UbarChy</h1>
+    <p>Simple, minimal, and inspired by Everforest</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to UbarChy</h2>
+      <p>A lightweight environment built for calm productivity.</p>
+      <div class="image-grid">
+        <img src="images/ubarchy.webp" alt="Screenshot 1">
+        <img src="images/image.png" alt="Screenshot 2">
+        <img src="images/image2.png" alt="Screenshot 3">
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h2>Proving DHH Wrong</h2>
+      <video controls>
+        <source src="images/proving_dhh_wrong.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <div class="buttons">
+      <button class="btn" onclick="window.location.href='download.iso'">Download ISO</button>
+      <button class="btn btn-secondary" onclick="window.location.href='docs.html'">Read Docs</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 UbarChy — Designed with the Everforest palette
+  </footer>
+</body>
+</html>

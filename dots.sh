@@ -17,5 +17,5 @@ curl -L -o ~/Downloads/a.png https://raw.githubusercontent.com/basecamp/omarchy/
 
 curl -L -o ~/.config/hypr/hyprland.conf https://raw.githubusercontent.com/tawfiqkhalilieh/ubarchy/refs/heads/development/hypr/hyprland.conf
 
-curl -L -o ~/.config/waybar/config.jsonc https://raw.githubusercontent.com/tawfiqkhalilieh/ubarchy-testing/refs/heads/development/waybar/config.jsonc
-curl -L -o ~/.config/waybar/style.css https://raw.githubusercontent.com/tawfiqkhalilieh/ubarchy-testing/refs/heads/development/waybar/style.css
+curl -L -o ~/.config/waybar/config.jsonc https://raw.githubusercontent.com/tawfiqkhalilieh/ubarchy/refs/heads/development/waybar/config.jsonc
+curl -L -o ~/.config/waybar/style.css https://raw.githubusercontent.com/tawfiqkhalilieh/ubarchy/refs/heads/development/waybar/style.css
